@@ -1,4 +1,6 @@
-import GlobalStyles from "../src/styles/global.ts";
+import { ThemeProvider } from "styled-components";
+import theme from "styles/theme.ts"
+import GlobalStyles from "styles/global.ts";
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
@@ -12,9 +14,9 @@ export const parameters = {
 
 export const decorators = [
   (Story) => (
-    <>
+    <ThemeProvider theme={theme}>
       <Story />
       <GlobalStyles removeBg />
-    </>
+    </ThemeProvider>
   )
 ]
