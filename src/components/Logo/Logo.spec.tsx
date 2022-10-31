@@ -42,8 +42,8 @@ describe("<Logo />", () => {
     renderWithTheme(<Logo hideText />);
 
     expect(screen.getByLabelText(/rentx/i).parentElement).toHaveStyle({
-      width: "5.8rem",
-      height: "4.5rem"
+      width: "4.8rem",
+      height: "3.5rem"
     });
   });
 });

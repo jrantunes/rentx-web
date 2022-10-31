@@ -13,11 +13,11 @@ const wrapperModifiers = {
   `,
 
   hideText: () => css`
-    width: 5.8rem;
-    height: 4.5rem;
+    width: 4.8rem;
+    height: 3.5rem;
 
     svg {
-      height: 4.5rem;
+      height: 3.5rem;
       pointer-events: none;
     }
 
@@ -26,7 +26,7 @@ const wrapperModifiers = {
     }
 
     .logo-x {
-      transform: translateX(-80%);
+      transform: translateX(-83%);
     }
   `
 };
