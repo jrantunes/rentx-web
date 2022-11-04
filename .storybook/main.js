@@ -1,3 +1,5 @@
+const path = require("path")
+
 module.exports = {
   "stories": [
     "../src/components/**/stories.tsx",
@@ -14,6 +16,10 @@ module.exports = {
   },
   webpackFinal: (config) => {
     config.resolve.modules.push(`${process.cwd()}/src`)
+    config.resolve.alias = {
+      ...config.resolve.alias,
+      assets: path.resolve(__dirname, '..', 'public/assets')
+    }
 
     return config
   }

@@ -37,7 +37,14 @@ export const withIcon: ComponentStory<typeof Button> = (args) => (
 );
 
 withIcon.args = {
-  icon: <AiOutlineCar />
+  icon: <AiOutlineCar />,
+  children: ""
+};
+
+withIcon.argTypes = {
+  children: {
+    control: false
+  }
 };
 
 export const asLink: ComponentStory<typeof Button> = (args) => (
