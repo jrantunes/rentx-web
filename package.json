@@ -63,7 +63,7 @@
     ]
   },
   "lint-staged": {
-    "src/**/*": [
+    "src/**/*.{ts,tsx,js}": [
       "yarn lint --fix",
       "yarn test --passWithNoTests --bail"
     ]
@@ -71,7 +71,7 @@
   "jest": {
     "moduleNameMapper": {
       "assets/(.*)": [
-        "<rootDir>/public/assets/$1"
+        "<rootDir>/src/assets/$1"
       ]
     },
     "collectCoverageFrom": [
@@ -81,6 +81,10 @@
       "!src/reportWebVitals.ts",
       "!src/**/*.d.ts",
       "!src/index.tsx"
+    ],
+    "coveragePathIgnorePatterns": [
+      "<rootDir>/src/routes/",
+      "<rootDir>/src/pages/"
     ]
   },
   "devDependencies": {
