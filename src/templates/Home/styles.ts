@@ -11,15 +11,16 @@ import backgroundImg from "assets/rentx-background.png";
 export const Wrapper = styled.section`
   ${({ theme }) => css`
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     background-color: ${theme.colors.black};
 
     ${ContainerStyles.Container} {
-      height: 100%;
+      min-height: 100vh;
+      padding: ${theme.spacings.small};
       display: grid;
       align-items: center;
       grid-template-columns: repeat(2, 1fr);
-      gap: calc(${theme.grid.gutter});
+      gap: ${theme.grid.gutter};
     }
 
     ${media.lessThan("880px" as keyof DefaultBreakpoints)`

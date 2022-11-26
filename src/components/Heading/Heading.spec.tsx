@@ -36,6 +36,14 @@ describe("<Heading />", () => {
     });
   });
 
+  it("should render with xsmall size", () => {
+    renderWithTheme(<Heading size="xsmall">Heading</Heading>);
+
+    expect(screen.getByRole("heading", { name: /heading/i })).toHaveStyle({
+      "font-size": "1.6rem"
+    });
+  });
+
   it("should render with small size", () => {
     renderWithTheme(<Heading size="small">Heading</Heading>);
 

@@ -4,6 +4,10 @@ import { HeadingProps } from ".";
 type WrapperProps = Omit<HeadingProps, "children">;
 
 const wrapperModifiers = {
+  xsmall: (theme: DefaultTheme) => css`
+    font-size: ${theme.font.sizes.small};
+  `,
+
   small: (theme: DefaultTheme) => css`
     font-size: ${theme.font.sizes.large};
   `,

@@ -4,7 +4,7 @@ import * as S from "./styles";
 export type HeadingProps = {
   children: ReactNode;
   color?: "white" | "gray700" | "primary";
-  size?: "small" | "medium" | "large";
+  size?: "xsmall" | "small" | "medium" | "large";
   align?: "left" | "center" | "right";
 };
 

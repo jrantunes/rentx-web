@@ -5,11 +5,13 @@ export type CarIllustrationProps = {
   backgroundElementOpacity?: "50%" | "100%";
   absoluteImageURL: string;
   absoluteImageAltText: string;
+  id?: string;
 };
 
 const CarIllustration = ({
   absoluteImageURL,
   absoluteImageAltText,
+  id = "illustration",
   backgroundElementColor = "primary",
   backgroundElementOpacity = "100%"
 }: CarIllustrationProps) => {
@@ -23,19 +25,19 @@ const CarIllustration = ({
         viewBox="0 0 477 613"
       >
         <path
-          stroke="url(#a)"
+          stroke={`url(#${id}-A)`}
           strokeWidth="16"
           d="M8 54.822h414.178v549.767H8z"
         />
         <path
           transform="rotate(-180 469 556.791)"
-          stroke="url(#b)"
+          stroke={`url(#${id}-B)`}
           strokeWidth="16"
           d="M469 556.791h414.178v548.791H469z"
         />
         <defs>
           <linearGradient
-            id="a"
+            id={`${id}-A`}
             x1="0"
             y1="46.455"
             x2="475.559"
@@ -50,7 +52,7 @@ const CarIllustration = ({
             <stop offset="1" stopColor="currentColor" stopOpacity=".1" />
           </linearGradient>
           <linearGradient
-            id="b"
+            id={`${id}-B`}
             x1="477"
             y1="564.425"
             x2="951.657"

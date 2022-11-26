@@ -1,7 +1,7 @@
 export default {
   grid: {
     gutter: "3.2rem",
-    container: "120rem"
+    container: "112rem"
   },
   font: {
     inter:
