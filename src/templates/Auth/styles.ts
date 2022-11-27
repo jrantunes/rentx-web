@@ -3,17 +3,18 @@ import media from "styled-media-query";
 
 import * as CarIllustrationStyles from "components/CarIllustration/styles";
 import * as HeadingStyles from "components/Heading/styles";
+import { AuthProps } from ".";
 
-export const Wrapper = styled.section`
-  ${({ theme }) => css`
+type IllustrationPosition = Pick<AuthProps, "illustrationPosition">;
+
+export const Wrapper = styled.section<IllustrationPosition>`
+  ${({ theme, illustrationPosition }) => css`
     min-height: calc(100vh - 8rem);
     max-width: ${theme.grid.container};
     margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* grid-template-columns: repeat(2, 1fr); */
-    /* gap: 13rem; */
     padding: ${theme.spacings.medium} ${theme.spacings.xsmall};
 
     ${HeadingStyles.Wrapper} {
@@ -22,7 +23,7 @@ export const Wrapper = styled.section`
 
     ${CarIllustrationStyles.Wrapper} {
       flex: 7;
-      order: 1;
+      order: ${illustrationPosition === "right" ? 1 : 0};
       max-width: 47rem;
       width: 100%;
 
@@ -33,13 +34,15 @@ export const Wrapper = styled.section`
   `}
 `;
 
-export const FormContainer = styled.div`
-  flex: 8;
-  max-width: 40rem;
-  margin-right: 16rem;
+export const FormContainer = styled.div<IllustrationPosition>`
+  ${({ illustrationPosition }) => css`
+    flex: 8;
+    max-width: 40rem;
+    margin-${illustrationPosition}: 16rem;
 
-  ${media.lessThan("medium")`
-    flex: 1;
-    margin: 0 auto;
+    ${media.lessThan("medium")`
+      flex: 1;
+      margin: 0 auto;
+    `}
   `}
 `;

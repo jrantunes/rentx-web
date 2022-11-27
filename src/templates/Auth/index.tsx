@@ -9,6 +9,7 @@ import { ReactNode } from "react";
 export type AuthProps = {
   illustrationPosition?: "left" | "right";
   carImage?: string;
+  carImageAltText?: string;
   title: string;
   children: ReactNode;
 };
@@ -16,18 +17,19 @@ export type AuthProps = {
 const Auth = ({
   title,
   children,
-  // illustrationPosition = "right",
-  carImage = carDefaultIllustration
+  illustrationPosition = "right",
+  carImage = carDefaultIllustration,
+  carImageAltText = "Imagem de um carro vermelho centralizada verticalmente e acima de elementos retangulares"
 }: AuthProps) => {
   return (
-    <S.Wrapper>
+    <S.Wrapper illustrationPosition={illustrationPosition}>
       <CarIllustration
         backgroundElementColor="gray700"
         backgroundElementOpacity="50%"
         absoluteImageURL={carImage}
-        absoluteImageAltText="Imagem de um carro vermelho centralizada verticalmente e acima de elementos retangulares"
+        absoluteImageAltText={carImageAltText}
       />
-      <S.FormContainer>
+      <S.FormContainer illustrationPosition={illustrationPosition}>
         <Heading color="gray700">{title}</Heading>
         {children}
       </S.FormContainer>
