@@ -1,0 +1,194 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<TextField /> should render with icon 1`] = `
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #FFFFFF;
+  padding: 0 1.6rem;
+  border: 0.1rem solid #EBEBF0;
+  -webkit-transition: border 0.1s ease-in-out;
+  transition: border 0.1s ease-in-out;
+  cursor: text;
+}
+
+.c2:hover,
+.c2:focus-within {
+  border-color: #AEAEB3;
+}
+
+.c4 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  position: relative;
+  border-left: 0.1rem solid #F4F5F6;
+  padding-left: 1.6rem;
+  margin-left: 1.6rem;
+}
+
+.c4 .c6 {
+  left: 1.6rem;
+}
+
+.c5 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #47474D;
+  background: transparent;
+  width: 100%;
+  padding: 1.6rem 0;
+  border: 0;
+  outline: none;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+}
+
+.c5:focus {
+  -webkit-transform: translateY(0.8rem);
+  -ms-transform: translateY(0.8rem);
+  transform: translateY(0.8rem);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.c5:focus + label {
+  opacity: 1;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.c5::-webkit-input-placeholder {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #AEAEB3;
+}
+
+.c5::-moz-placeholder {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #AEAEB3;
+}
+
+.c5:-ms-input-placeholder {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #AEAEB3;
+}
+
+.c5::placeholder {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #AEAEB3;
+}
+
+.c7 {
+  cursor: text;
+  position: absolute;
+  background: transparent;
+  color: #AEAEB3;
+  font-size: 1.2rem;
+  font-weight: 400;
+  top: 0.6rem;
+  left: 0;
+  opacity: 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-order: 0;
+  -ms-flex-order: 0;
+  order: 0;
+}
+
+.c3 svg {
+  width: 2rem;
+  height: 2rem;
+  color: #7A7A80;
+}
+
+.c8 {
+  color: #FF99AA;
+  font-size: 1.4rem;
+}
+
+.c0 .c6 {
+  color: #FF99AA;
+}
+
+.c0 .c1 {
+  border: 0.1rem solid #FF99AA;
+}
+
+<div
+  class="c0"
+>
+  <div
+    class="c1 c2"
+  >
+    <div
+      class="c3"
+    >
+      <svg
+        data-testid="icon"
+        fill="currentColor"
+        height="1em"
+        stroke="currentColor"
+        stroke-width="0"
+        viewBox="0 0 1024 1024"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M928 160H96c-17.7 0-32 14.3-32 32v640c0 17.7 14.3 32 32 32h832c17.7 0 32-14.3 32-32V192c0-17.7-14.3-32-32-32zm-40 110.8V792H136V270.8l-27.6-21.5 39.3-50.5 42.8 33.3h643.1l42.8-33.3 39.3 50.5-27.7 21.5zM833.6 232L512 482 190.4 232l-42.8-33.3-39.3 50.5 27.6 21.5 341.6 265.6a55.99 55.99 0 0 0 68.7 0L888 270.8l27.6-21.5-39.3-50.5-42.7 33.2z"
+        />
+      </svg>
+    </div>
+    <div
+      class="c4"
+    >
+      <input
+        autocomplete="off"
+        class="c5"
+        id="input"
+        placeholder="Placeholder"
+        value=""
+      />
+      <label
+        aria-hidden="true"
+        class="c6 c7"
+        for="input"
+      >
+        Label
+      </label>
+    </div>
+  </div>
+  <p
+    class="c8"
+  >
+    Error Message
+  </p>
+</div>
+`;
