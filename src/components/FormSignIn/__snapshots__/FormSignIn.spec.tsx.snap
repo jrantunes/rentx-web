@@ -240,6 +240,8 @@ exports[`<FormSignIn /> should render the form 1`] = `
 }
 
 .c9 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
   display: block;
   position: relative;
   cursor: pointer;
@@ -321,7 +323,6 @@ exports[`<FormSignIn /> should render the form 1`] = `
           class="c5"
         >
           <input
-            autocomplete="off"
             class="c6"
             id="email"
             name="email"
@@ -366,7 +367,6 @@ exports[`<FormSignIn /> should render the form 1`] = `
           class="c5"
         >
           <input
-            autocomplete="off"
             class="c6"
             id="password"
             name="password"

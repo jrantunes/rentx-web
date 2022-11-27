@@ -223,7 +223,6 @@ exports[`<FormSignUp /> should render the form 1`] = `
           class="c5"
         >
           <input
-            autocomplete="off"
             class="c6"
             id="name"
             name="name"
@@ -267,7 +266,6 @@ exports[`<FormSignUp /> should render the form 1`] = `
           class="c5"
         >
           <input
-            autocomplete="off"
             class="c6"
             id="email"
             name="email"
@@ -312,7 +310,6 @@ exports[`<FormSignUp /> should render the form 1`] = `
           class="c5"
         >
           <input
-            autocomplete="off"
             class="c6"
             id="cnh"
             name="cnh"
@@ -356,7 +353,6 @@ exports[`<FormSignUp /> should render the form 1`] = `
           class="c5"
         >
           <input
-            autocomplete="off"
             class="c6"
             id="password"
             name="password"
@@ -401,10 +397,9 @@ exports[`<FormSignUp /> should render the form 1`] = `
           class="c5"
         >
           <input
-            autocomplete="off"
             class="c6"
-            id="confirm-password"
-            name="confirm-password"
+            id="confirmPassword"
+            name="confirmPassword"
             placeholder="Confirmar senha"
             type="password"
             value=""
@@ -412,7 +407,7 @@ exports[`<FormSignUp /> should render the form 1`] = `
           <label
             aria-hidden="true"
             class="c7 c8"
-            for="confirm-password"
+            for="confirmPassword"
           >
             Confirmar senha
           </label>
@@ -422,6 +417,7 @@ exports[`<FormSignUp /> should render the form 1`] = `
     <button
       class="c9 c10"
       color="red"
+      type="submit"
     >
       <span>
         Cadastrar

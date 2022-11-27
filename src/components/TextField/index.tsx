@@ -1,4 +1,5 @@
 import { ChangeEvent, InputHTMLAttributes, ReactNode, useState } from "react";
+import { FieldValues, UseFormRegister } from "react-hook-form";
 
 import * as S from "./styles";
 
@@ -9,8 +10,10 @@ export type TextFieldProps = {
   label?: string;
   labelFor?: string;
   initialValue?: string;
+  formValue?: string;
   disabled?: boolean;
   error?: string;
+  register?: UseFormRegister<FieldValues>;
 } & InputHTMLAttributes<HTMLInputElement>;
 
 const TextField = ({
@@ -18,6 +21,8 @@ const TextField = ({
   icon,
   label,
   error,
+  register,
+  formValue = "",
   labelFor = "",
   initialValue = "",
   iconPosition = "left",
@@ -35,22 +40,30 @@ const TextField = ({
   };
 
   return (
-    <S.Wrapper disabled={disabled} error={!!error} hasValue={!!value}>
+    <S.Wrapper
+      disabled={disabled}
+      error={!!error}
+      hasValue={!!value || !!formValue}
+    >
       <S.InputWrapper>
         {!!icon && <S.Icon iconPosition={iconPosition}>{icon}</S.Icon>}
         <S.InputContent iconPosition={iconPosition} hasIcon={!!icon}>
           <S.Input
             id={labelFor}
-            value={value}
             disabled={disabled}
-            hasValue={!!value}
+            hasValue={!!value || !!formValue}
             hasLabel={!!label}
-            onChange={onChange}
-            autoComplete="off"
+            onChange={register ? undefined : onChange}
+            value={register ? undefined : value}
+            {...(!!register && register(props.name || "name"))}
             {...props}
           />
           {!!label && (
-            <S.Label aria-hidden={!value} hasValue={!!value} htmlFor={labelFor}>
+            <S.Label
+              aria-hidden={!value}
+              hasValue={!!value || !!formValue}
+              htmlFor={labelFor}
+            >
               {label}
             </S.Label>
           )}

@@ -2,6 +2,7 @@ import styled, { css } from "styled-components";
 
 export const FormLink = styled.a`
   ${({ theme }) => css`
+    text-decoration: none;
     display: block;
     position: relative;
     cursor: pointer;

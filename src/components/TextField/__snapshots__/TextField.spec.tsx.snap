@@ -170,7 +170,6 @@ exports[`<TextField /> should render with icon 1`] = `
       class="c4"
     >
       <input
-        autocomplete="off"
         class="c5"
         id="input"
         placeholder="Placeholder"
