@@ -9,6 +9,7 @@ export default {
   args: {
     children: "RentX",
     fullWidth: false,
+    borderOnly: false,
     size: "medium",
     color: "red"
   },

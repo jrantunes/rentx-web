@@ -1,0 +1,411 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<FormSignIn /> should render the form 1`] = `
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #FFFFFF;
+  padding: 0 1.6rem;
+  border: 0.1rem solid #EBEBF0;
+  -webkit-transition: border 0.1s ease-in-out;
+  transition: border 0.1s ease-in-out;
+  cursor: text;
+}
+
+.c3:hover,
+.c3:focus-within {
+  border-color: #AEAEB3;
+}
+
+.c5 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  position: relative;
+  border-left: 0.1rem solid #F4F5F6;
+  padding-left: 1.6rem;
+  margin-left: 1.6rem;
+}
+
+.c5 .c7 {
+  left: 1.6rem;
+}
+
+.c6 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #47474D;
+  background: transparent;
+  width: 100%;
+  padding: 1.6rem 0;
+  border: 0;
+  outline: none;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+}
+
+.c6:focus {
+  -webkit-transform: translateY(0.8rem);
+  -ms-transform: translateY(0.8rem);
+  transform: translateY(0.8rem);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.c6:focus + label {
+  opacity: 1;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.c6::-webkit-input-placeholder {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #AEAEB3;
+}
+
+.c6::-moz-placeholder {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #AEAEB3;
+}
+
+.c6:-ms-input-placeholder {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #AEAEB3;
+}
+
+.c6::placeholder {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #AEAEB3;
+}
+
+.c8 {
+  cursor: text;
+  position: absolute;
+  background: transparent;
+  color: #AEAEB3;
+  font-size: 1.2rem;
+  font-weight: 400;
+  top: 0.6rem;
+  left: 0;
+  opacity: 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-order: 0;
+  -ms-flex-order: 0;
+  order: 0;
+}
+
+.c4 svg {
+  width: 2rem;
+  height: 2rem;
+  color: #7A7A80;
+}
+
+.c11 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border: 0;
+  cursor: pointer;
+  font-family: Inter,--apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,'Open Sans','Helvetica Neue',sans-serif;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #FFFFFF;
+  padding: 0.8rem 4rem;
+  -webkit-transition: background-color 0.1s ease-in-out;
+  transition: background-color 0.1s ease-in-out;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  height: 6rem;
+  background-color: #DC1637;
+  width: 100%;
+}
+
+.c11:hover {
+  background-color: #ae112b;
+}
+
+.c11:disabled {
+  opacity: 0.6;
+}
+
+.c11:disabled:hover {
+  background-color: #DC1637;
+}
+
+.c12 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border: 0;
+  cursor: pointer;
+  font-family: Inter,--apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,'Open Sans','Helvetica Neue',sans-serif;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #FFFFFF;
+  padding: 0.8rem 4rem;
+  -webkit-transition: background-color 0.1s ease-in-out;
+  transition: background-color 0.1s ease-in-out;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  height: 6rem;
+  background-color: #DC1637;
+  background: transparent;
+  border: 0.1rem solid #DEDEE3;
+  font-weight: 500;
+  color: #47474D;
+  -webkit-transition: border-color 0.1s ease-in-out;
+  transition: border-color 0.1s ease-in-out;
+  width: 100%;
+}
+
+.c12:hover {
+  background-color: #ae112b;
+}
+
+.c12:disabled {
+  opacity: 0.6;
+}
+
+.c12:disabled:hover {
+  background-color: #DC1637;
+}
+
+.c12:hover {
+  background: transparent;
+  border-color: #DC1637;
+}
+
+.c0 .c2 {
+  margin: 0.8rem 0;
+}
+
+.c0 .c10 {
+  margin: 1.6rem auto 0;
+}
+
+.c1 {
+  color: #7A7A80;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.4rem;
+  margin-bottom: 3.2rem;
+  max-width: 24rem;
+}
+
+.c9 {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  font-size: 1.6rem;
+  color: #737380;
+  -webkit-transition: color 0.1s ease-in-out;
+  transition: color 0.1s ease-in-out;
+  margin: 1.6rem 0 0.8rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.c9:after {
+  content: "";
+  height: 0.2rem;
+  background-color: #DC1637;
+  position: absolute;
+  bottom: -0.4rem;
+  left: 0;
+  width: 100%;
+  -webkit-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  -webkit-transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  -webkit-transform-origin: bottom right;
+  -ms-transform-origin: bottom right;
+  transform-origin: bottom right;
+}
+
+.c9:hover {
+  color: #DC1637;
+}
+
+.c9:hover:after {
+  -webkit-transform: scaleX(1);
+  -ms-transform: scaleX(1);
+  transform: scaleX(1);
+  -webkit-transform-origin: bottom left;
+  -ms-transform-origin: bottom left;
+  transform-origin: bottom left;
+}
+
+<div
+  class="c0"
+>
+  <p
+    class="c1"
+  >
+    Faça seu login para começar uma experiência incrível.
+  </p>
+  <form>
+    <div
+      class="c2 "
+    >
+      <div
+        class="c3"
+      >
+        <div
+          class="c4"
+        >
+          <svg
+            fill="currentColor"
+            height="1em"
+            stroke="currentColor"
+            stroke-width="0"
+            viewBox="0 0 1024 1024"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M928 160H96c-17.7 0-32 14.3-32 32v640c0 17.7 14.3 32 32 32h832c17.7 0 32-14.3 32-32V192c0-17.7-14.3-32-32-32zm-40 110.8V792H136V270.8l-27.6-21.5 39.3-50.5 42.8 33.3h643.1l42.8-33.3 39.3 50.5-27.7 21.5zM833.6 232L512 482 190.4 232l-42.8-33.3-39.3 50.5 27.6 21.5 341.6 265.6a55.99 55.99 0 0 0 68.7 0L888 270.8l27.6-21.5-39.3-50.5-42.7 33.2z"
+            />
+          </svg>
+        </div>
+        <div
+          class="c5"
+        >
+          <input
+            autocomplete="off"
+            class="c6"
+            id="email"
+            name="email"
+            placeholder="E-mail"
+            type="email"
+            value=""
+          />
+          <label
+            aria-hidden="true"
+            class="c7 c8"
+            for="email"
+          >
+            E-mail
+          </label>
+        </div>
+      </div>
+    </div>
+    <div
+      class="c2 "
+    >
+      <div
+        class="c3"
+      >
+        <div
+          class="c4"
+        >
+          <svg
+            fill="currentColor"
+            height="1em"
+            stroke="currentColor"
+            stroke-width="0"
+            viewBox="0 0 1024 1024"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M832 464h-68V240c0-70.7-57.3-128-128-128H388c-70.7 0-128 57.3-128 128v224h-68c-17.7 0-32 14.3-32 32v384c0 17.7 14.3 32 32 32h640c17.7 0 32-14.3 32-32V496c0-17.7-14.3-32-32-32zM332 240c0-30.9 25.1-56 56-56h248c30.9 0 56 25.1 56 56v224H332V240zm460 600H232V536h560v304zM484 701v53c0 4.4 3.6 8 8 8h40c4.4 0 8-3.6 8-8v-53a48.01 48.01 0 1 0-56 0z"
+            />
+          </svg>
+        </div>
+        <div
+          class="c5"
+        >
+          <input
+            autocomplete="off"
+            class="c6"
+            id="password"
+            name="password"
+            placeholder="Senha"
+            type="password"
+            value=""
+          />
+          <label
+            aria-hidden="true"
+            class="c7 c8"
+            for="password"
+          >
+            Senha
+          </label>
+        </div>
+      </div>
+    </div>
+    <a
+      class="c9"
+      href="#"
+    >
+      Esqueci minha senha
+    </a>
+    <button
+      class="c10 c11"
+      color="red"
+    >
+      <span>
+        Login
+      </span>
+    </button>
+    <button
+      class="c10 c12"
+      color="red"
+    >
+      <span>
+        Criar conta gratuita
+      </span>
+    </button>
+  </form>
+</div>
+`;

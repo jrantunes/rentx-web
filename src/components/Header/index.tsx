@@ -5,10 +5,12 @@ import * as S from "./styles";
 const Header = () => {
   return (
     <S.Wrapper>
-      <Heading color="gray700" size="small">
-        Perfil
-      </Heading>
-      <HeaderUser />
+      <S.HeaderContent>
+        <Heading color="gray700" size="small">
+          Perfil
+        </Heading>
+        <HeaderUser />
+      </S.HeaderContent>
     </S.Wrapper>
   );
 };

@@ -4,7 +4,7 @@ import { ButtonProps } from ".";
 
 type WrapperProps = {
   hasIcon: boolean;
-} & Pick<ButtonProps, "size" | "fullWidth" | "color">;
+} & Pick<ButtonProps, "size" | "fullWidth" | "color" | "borderOnly">;
 
 const wrapperModifiers = {
   red: (theme: DefaultTheme) => css`
@@ -74,6 +74,19 @@ const wrapperModifiers = {
     width: 100%;
   `,
 
+  borderOnly: (theme: DefaultTheme) => css`
+    background: transparent;
+    border: 0.1rem solid ${theme.colors.gray300};
+    font-weight: ${theme.font.normal};
+    color: ${theme.colors.gray700};
+    transition: border-color ${theme.transitions.fast};
+
+    &:hover {
+      background: transparent;
+      border-color: ${theme.colors.primary};
+    }
+  `,
+
   withIcon: (theme: DefaultTheme) => css`
     height: auto;
     padding: 1.4rem;
@@ -90,7 +103,7 @@ const wrapperModifiers = {
 };
 
 export const Wrapper = styled.button<WrapperProps>`
-  ${({ theme, size, fullWidth, color, hasIcon }) => css`
+  ${({ theme, size, fullWidth, color, hasIcon, borderOnly }) => css`
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -107,6 +120,7 @@ export const Wrapper = styled.button<WrapperProps>`
     ${!!size && wrapperModifiers[size!](theme)}
     ${!!color && wrapperModifiers[color!](theme)}
     ${!!hasIcon && wrapperModifiers.withIcon(theme)}
+    ${borderOnly && wrapperModifiers.borderOnly(theme)}
     ${fullWidth && wrapperModifiers.fullWidth()}
   `}
 `;
